@@ -1,0 +1,17 @@
+[package]
+name = "data-url-encode-macro"
+version = "1.0.0"
+authors = ["Ivan Nikulin <ivan@nikulin.engineering>"]
+edition = "2018"
+license = "MIT"
+license_file = "../LICENSE"
+description = "Rust macro to generate base64+percent-encoded strings suitable for data URLs in compile time"
+repository = "https://github.com/inikulin/data-url-encode-macro"
+documentation = "https://docs.rs/data_url_encode_macro/"
+categories = ["web-programming"]
+keywords = ["data-url", "base64", "percent_encoding", "macro"]
+readme = "../README.md"
+
+[dependencies]
+data-url-encode-macro-impl = { path = "../data-url-encode-macro-impl", version = "1.0.0" }
+proc-macro-hack = "0.5.11"
